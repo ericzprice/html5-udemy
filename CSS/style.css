@@ -1,18 +1,16 @@
-#title {
-      color: blue;
-      font-size: 40px;
-      text-align: center;
-}
-
-.paragraph {
+/* name*/
+.color1 {
       color: red;
 }
-#style1 {
-      font-size: 20px;
+
+/* hexidecimal*/
+.color2 {
+      color: #FF0000;
 }
-#style2 {
-      text-align: center;
-}
-#style3 {
-      font-weight: bold;
+
+
+
+/* RGB */
+.color3 {
+      color: rgba(255, 0, 0, 0.5);
 }
