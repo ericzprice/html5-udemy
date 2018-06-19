@@ -1,16 +1,7 @@
-/* name*/
-.color1 {
-      color: red;
-}
-
-/* hexidecimal*/
-.color2 {
-      color: #FF0000;
-}
-
-
-
-/* RGB */
-.color3 {
-      color: rgba(255, 0, 0, 0.5);
+body {
+      background-color: gray;
+      background-image: url('../img/background.jpg');
+      background-repeat: no-repeat;
+      background-position: center 100px;
+      height: 100%
 }
