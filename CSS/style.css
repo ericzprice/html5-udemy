@@ -1,17 +1,10 @@
-.box {
-      background-color: green;
-      width: 100px;
-      padding: 50px;
-      margin: 10px;
-      font-size: 30px;
-      color: white;
-      float: left;
-      /* box2,3 and 4 float left of the paragraph */
-      /* float: right; */
-      /* box1 stays in right upper corner */
-
-}
-
-.clear {
-      clear: both;
+div {
+      background-color: orange;
+      width: 300px;
+      height: 200px;
+      font-size: 20px;
+      /* overflow: visible; */
+      /* overflow: hidden; */
+      /* overflow: scroll; */
+      overflow: auto;
 }
