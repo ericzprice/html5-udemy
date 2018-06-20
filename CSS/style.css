@@ -1,9 +1,6 @@
-.box {
-      background-color: red;
-      text-align: center;
-      font-size: 50px;
-      padding: 40px;
-      border: 20px solid brown;
-      margin: -50px 100px 20px 0px;
-
+* {
+      /* display: block; */
+      /* display: inline; */
+      display: inline-block;
+      height: 150px;
 }
