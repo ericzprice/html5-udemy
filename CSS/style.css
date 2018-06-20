@@ -1,6 +1,53 @@
-* {
-      /* display: block; */
-      /* display: inline; */
-      display: inline-block;
-      height: 150px;
+body {
+      height: 2000px;
+}
+
+.box {
+      background-color: gray;
+      color: white;
+      font-size: 30px;
+      padding: 20px;
+      width: 100px;
+      /* position: static; */
+      /* position: relative; */
+      top: 100px;
+      /* HTML objects are static by default and thus the black box moves according to .box */
+
+}
+
+.box1 {
+      background-color: black;
+      height: 500px;
+      width: 500px;
+      position: relative;
+      bottom: 100px;
+      left: 200px;
+
+
+}
+
+
+
+.parent {
+      background-color: black;
+      height: 500px;
+      width: 500px;
+      position: relative;
+      /* parent has to be relative inorder to control the movement of the child */
+      bo
+}
+
+
+.child {
+      background-color: gray;
+      color: white;
+      font-size: 30px;
+      padding: 20px;
+      width: 100px;
+      top: 100px;
+      right: 50px;
+      /* position: fixed; */
+      position: absolute;
+      bottom: 200px;
+
 }
