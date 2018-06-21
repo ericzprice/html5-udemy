@@ -12,12 +12,41 @@ body {
     font-size: 30px;
     margin: auto;
     display: flex;
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap */
+    /* flex-wrap:nowrap; */
+    /*instead of using both flex-direction and flex-wrap, can simplify to flex-flow*/
+    flex-flow: row wrap;
+    /* row and wrap are separate properties */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* height: 500px;  */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* align-self Aligns items vertically */
+    /* Aligns items w/ align-self to center of container */
+    /* align-self: center; */
+    /* Aligns items to top left*/
+    /* align-self: flex-start; */
+    /* Aligns items to bottom left */
+    /* align-items: flex-end; */
+    /* Aligns items to fill container, which is default */
+    /* align-self: stretch; */
+    /* Aligns items so that their middle/baseline aligns centered */
+      /* align-self: baseline; */
+
+
 
 }
 
 .items {
- width: 300px;
- height: 200px;
+ /* width: 300px;
+ height: 200px; */
 
 }
 
