@@ -1,3 +1,14 @@
+body {
+      /* The perspective property is used to give a 3D-positioned element some perspective.
+
+The perspective property defines how far the object is away from the user. So, a lower value will result in a more intensive 3D effect than a higher value.
+
+When defining the perspective property for an element, it is the CHILD elements that get the perspective view, NOT the element itself. */
+
+
+      perspective: 600px;
+}
+
 .box{
       background-color: #696969;
       width: 100px;
@@ -7,28 +18,22 @@
 }
 
 .translate:hover {
-      /* on hover box moves 80 px on x-axis and 30px on y-axis */
-      /* Translate lets you move elements left, rt, up, down from it's starting/current position*/
-      transform: translate(80px, 30px);
-
+      /* These two do the same thing */
+      /* transform: translateZ(100px); */
+      transform: translate3D(0,0,100px)
+      /* transform: translate3D(X,Y,Z); */
 }
 
 .rotate:hover {
-      /* The rotate method rotates an element clockwise or counter-clockwise according to a given degree */
-      /* transform: rotate(120deg); */
-      transform: rotate(-120deg);
+      /* transform: rotate3d(rotateX, rotateY, rotateZ, Angle); */
+      transform: rotate3d(2, 5, 4, 45deg);
+      /* transform: rotateZ(45deg); */
+
 }
 
 .scale:hover {
-      /* The scale method increases or decreases the size of an element according to the parameters given for the width and the height */
-      /* transform: scale(4,2); */
-      transform: scale(0.5,0.5);
-}
+      /* transform: scale3D(1,1,4) rotateX(90deg); */
+      /* z axis is multiplied by 4 */
+      transform: scale3D(2,1,3) rotate3d(1,0,0,90deg);
 
-.skew:hover {
-      /* The skew method skews an element along the x and y axis by the given angles */
-      /* transform: skew(30deg,40deg); */
-      /* transform: skew(-30deg,20deg); */
-      /* transform: skew(30deg); */
-      transform: skewY(30deg);
 }
