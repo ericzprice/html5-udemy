@@ -1,39 +1,22 @@
-body {
-      /* The perspective property is used to give a 3D-positioned element some perspective.
+/* transition: property || duration || timing-function || delay ;  */
 
-The perspective property defines how far the object is away from the user. So, a lower value will result in a more intensive 3D effect than a higher value.
-
-When defining the perspective property for an element, it is the CHILD elements that get the perspective view, NOT the element itself. */
-
-
-      perspective: 600px;
+.box {
+      width: 150px;
+      height: 150px;
+      background-color: gray;
+      /* transition:  background-color 1s ease 0.5s; */
+      /* transition-property: background-color; */
+      /* transition-property: transform; */
+      /* transition-duration: 2s; */
+      /* transition-timing-function: ease; */
+      /* transition-timing-function: linear;
+      transition-delay: 2s; */
+      /* Below is how to do all of the above eloquently */
+      /* transition: all 2s linear 2s; */
+      transition: background-color 2s linear 2s, transform 5s ease-out 1s;
 }
 
-.box{
-      background-color: #696969;
-      width: 100px;
-      height: 100px;
-      margin: 150px;
-      border: 2px solid #000;
-}
-
-.translate:hover {
-      /* These two do the same thing */
-      /* transform: translateZ(100px); */
-      transform: translate3D(0,0,100px)
-      /* transform: translate3D(X,Y,Z); */
-}
-
-.rotate:hover {
-      /* transform: rotate3d(rotateX, rotateY, rotateZ, Angle); */
-      transform: rotate3d(2, 5, 4, 45deg);
-      /* transform: rotateZ(45deg); */
-
-}
-
-.scale:hover {
-      /* transform: scale3D(1,1,4) rotateX(90deg); */
-      /* z axis is multiplied by 4 */
-      transform: scale3D(2,1,3) rotate3d(1,0,0,90deg);
-
+.box:hover {
+      background-color: orange;
+      transform: translate(100px);
 }
